@@ -13,10 +13,10 @@ typedef enum {
 
 void init_array(DynamicArray *arr);
 bool_t push_back(DynamicArray *arr,int value);
-void pop_back(DynamicArray *arr);
-void insert_at(DynamicArray *arr, int index, int value);
+bool_t pop_back(DynamicArray *arr);
+bool_t insert_at(DynamicArray *arr, int index, int value);
 void delete_at(DynamicArray *arr, int index, int value);
-void print_array(DynamicArray *arr);
+bool_t print_array(DynamicArray *arr);
 void free_array(DynamicArray *arr);
 
 #endif
